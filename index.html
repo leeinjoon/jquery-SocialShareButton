@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<!--[if lte IE 8 ]><html class="ie8 ie8L ie9L" lang="ja" xmlns:og="http://ogp.me/ns#"><![endif]-->
+<!--[if IE 9 ]><html class="ie9 ie9L" lang="ja" xmlns:og="http://ogp.me/ns#"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="ja" xmlns:og="http://ogp.me/ns#">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome">
+<title>ソーシャルシェアのjavascript</title>
+<meta name="description" content="ディスクリプションの内容">
+
+<!-- Facebook -->
+<meta property="og:title" content="OGタイトル">
+<meta property="og:description" content="てすとフェイスブックのディスクリプション">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://zizo.ne.jp/facebook/">
+<meta property="og:image" content="http://zizo.ne.jp/images/common/ogImage300.jpg">
+<meta property="og:site_name" content="サイトの名前">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@zizo">
+<meta name="twitter:description" content="てすとツイッターのディスクリプション">
+<meta name="twitter:image:src" content="http://zizo.ne.jp/images/common/ogImage300.jpg">
+<meta name="twitter:url" content="http://zizo.ne.jp/twitter/">
+
+<style media="screen">
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; list-style: none; }
+
+.headerSns {
+	width: 120px;
+	margin: 100px auto;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+}
+
+.headerSns ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+.headerSns ul a {
+	color: #fff;
+	font-size: 26px;
+}
+.headerSns ul a i {
+	background-color: blue;
+	width: 50px;
+	height: 50px;
+	margin: 0;
+	border-radius: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+</style>
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="jquery-socialshare.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.social-fb').shareButton( { sns : 'facebook' } );
+	$('.social-fb').shareButton( { sns : 'twitter', tag: 'lee, injoon, zizo' } );
+});
+</script>
+</head>
+
+<body>
+
+<div class="headerSns">
+	<ul>
+		<li><a href="#" class="social-fb"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+		<li><a href="javascript:();" class="social-fb"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+	</ul>
+</div>
+
+</body>
+
+</html>
